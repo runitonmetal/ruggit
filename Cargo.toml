@@ -1,0 +1,24 @@
+[package]
+name = "ruggit"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "rvar"
+path = "src/bin/rvar.rs"
+
+[lib]
+name = "ruggit"
+path = "src/lib.rs"
+
+[dependencies]
+age = "0.11.0"
+anyhow = "1.0.90"
+git2 = "0.19.0"
+regex = "1.11.1"
+reqwest = "0.12.8"
+serde = {version = "1.0.210", features = ["derive"]}
+serde_json = "1.0.132"
+termion = "4.0.3"
+thiserror = "2.0.1"
+tokio = {version = "1.41.0", features = ["full"]}
